@@ -7,20 +7,72 @@ function App() {
   const data = [
     { id: 1, name: "John Doe", role: "Admin", email: "john@example.com" },
     { id: 2, name: "Jane Smith", role: "Editor", email: "jane@example.com" },
-    { id: 3, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 33, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 34, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 35, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 36, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 37, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 38, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 39, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 40, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 311, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 322, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 333, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 344, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 355, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 366, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 377, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 388, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 399, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 400, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 411, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 422, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 433, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 444, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 455, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 466, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 477, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 488, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 499, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 500, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 511, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 522, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 533, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 544, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 555, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 566, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 577, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 588, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 399, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 600, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 711, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 822, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 933, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 744, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 755, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 766, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 777, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 788, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
+    { id: 799, name: "Sam Brown", role: "Viewer", email: "sam@example.com" },
   ];
 
   return (
-    <div className="p-6">
+    <div className="w-screen">
       <h1 className="text-xl font-semibold mb-4">User List</h1>
 
-      <div className="w-screen overflow-x-auto">
-        <table className="w-full border border-gray-200 bg-white shadow-sm rounded-xl">
-          <thead className="bg-gray-100 text-gray-700 text-sm uppercase">
-            <tr className="divide-x divide-gray-200">
-              <th className="py-3 px-4 text-left">Name</th>
-              <th className="py-3 px-4 text-left">Role</th>
-              <th className="py-3 px-4 text-left">Email</th>
+      <div className="w-full overflow-x-auto max-h-[400px] overflow-y-auto">
+        <table className="min-w-full border-separate border border-gray-200 bg-white shadow-sm rounded-xl">
+          <thead className="bg-gray-100 text-gray-700 text-sm uppercase sticky top-0 z-20">
+            <tr className="divide-x divide-gray-200 ">
+              <th className="py-3 px-4 text-center sticky left-0 bg-gray-100 z-30">
+                Name
+              </th>
+              <th className="py-3 px-4 text-center">Role</th>
+              <th className="py-3 px-4 text-center">Role2</th>
+              <th className="py-3 px-4 text-center">Role3</th>
+              <th className="py-3 px-4 text-center">Role4</th>
+              <th className="py-3 px-4 text-center">Role5</th>
+              <th className="py-3 px-4 text-center">Email</th>
               <th className="py-3 px-4 text-center">Actions</th>
             </tr>
           </thead>
@@ -29,18 +81,23 @@ function App() {
             {data.map((item) => (
               <tr
                 key={item.id}
-                className="divide-x divide-gray-200 hover:bg-gray-50 transition-colors duration-200"
+                className="divide-x divide-gray-200 hover:bg-gray-100 transition-colors duration-200 border border-gray-200"
               >
-                <td className="py-3 px-4">{item.name}</td>
-                <td className="py-3 px-4">{item.role}</td>
-                <td className="py-3 px-4">{item.email}</td>
-                <td className="py-3 px-4 text-center">
+                <td className="px-4 sticky left-0 bg-gray-100 z-10">
+                  {item.name}
+                </td>
+                <td className="px-4">{item.role}</td>
+
+                <td className="px-4">{item.role}</td>
+                <td className="px-4">{item.role}</td>
+                <td className="px-4">{item.role}</td>
+                <td className="px-4">{item.role}</td>
+
+                <td className="px-4">{item.email}</td>
+                <td className="px-4 text-center">
                   <div className="flex justify-center gap-2">
                     <button className="px-3 py-1 text-sm rounded-lg bg-blue-100 text-blue-700 hover:bg-blue-200 transition">
-                      Edit
-                    </button>
-                    <button className="px-3 py-1 text-sm rounded-lg bg-red-100 text-red-700 hover:bg-red-200 transition">
-                      Delete
+                      ...
                     </button>
                   </div>
                 </td>
