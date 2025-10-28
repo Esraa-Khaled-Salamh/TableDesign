@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
   const data = [
     { id: 1, name: "John Doe", role: "Admin", email: "john@example.com" },
     { id: 2, name: "Jane Smith", role: "Editor", email: "jane@example.com" },
@@ -58,9 +59,56 @@ function App() {
 
   return (
     <div className="w-screen">
-      <h1 className="text-xl font-semibold mb-4">User List</h1>
+      {/* Header row: title + filter + actions */}
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-xl font-semibold">User List</h1>
 
-      <div className="w-full overflow-x-auto max-h-[400px] overflow-y-auto">
+        <div className="flex items-center relative">
+          {/* Actions dropdown button — tiny space next to input */}
+          <div className="relative ml-0.5">
+            <button
+              onClick={() => setShowMenu((prev) => !prev)}
+              className="flex items-center gap-1 px-3 py-2 text-sm border border-gray-300 rounded-lg bg-white hover:bg-gray-100 transition"
+            >
+              <span>...</span>
+            </button>
+
+            {showMenu && (
+              <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-200 rounded-lg shadow-lg z-50">
+                <button
+                  className="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={() => {
+                    setShowMenu(false);
+                    console.log("Print clicked");
+                  }}
+                >
+                  Print
+                </button>
+                <button
+                  className="flex w-full items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  onClick={() => {
+                    setShowMenu(false);
+                    console.log("Excel clicked");
+                  }}
+                >
+                  Export to Excel
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Filter box with icon */}
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Filter users..."
+              className="w-64 pl-5 pr-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full overflow-x-auto max-h-[700px] overflow-y-auto">
         <table className="min-w-full border-separate border border-gray-200 bg-white shadow-sm rounded-xl">
           <thead className="bg-gray-100 text-gray-700 text-sm uppercase sticky top-0 z-20">
             <tr className="divide-x divide-gray-200 ">
